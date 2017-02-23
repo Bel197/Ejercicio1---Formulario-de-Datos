@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="main.js" language="javascript" type="text/javascript" ></script>
+  <title>Ejercicio</title>
+</head>
+<body>
+<h1>Formulario de Datos</h1>
+<section>
+  <form onsubmit="return false;">
+    <div>
+        <label for="nombre">Imgresa tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div> <br/>
+    <div>
+        <label for="apellido">Imgresa tu apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+    </div> <br/>
+    <div>
+        <label for="dni">Imgresa tu DNI:</label>
+        <input type="number" id="dni" name="dni" required >
+    </div> <br/>
+    <div>
+        <label for="direccion">Imgresa tu direccion:</label>
+        <input type="text" id="direccion" name="direccion" required>
+    </div> <br/>
+    <div>
+      <input type="submit" value="Enviar Datos" onclick="imprimirResultado()" >
+    </div> <br/>
+  </form>
+</section>
+<div id="resultado"></div>
+<script src="Assets/js/main.js"></script>
+</body>
+</html>
